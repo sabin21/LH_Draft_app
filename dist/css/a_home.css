@@ -1,0 +1,120 @@
+
+.section-hero{
+  position: relative; width:100%; height:940px; background:#0058AA; overflow:hidden;
+  >canvas{
+    position: absolute; width: 100%; height: 790px; top:0; left:0; background-color: #0058AA;
+  }
+  >.hero-inner{
+    position: relative; width:100%; height:940px; max-width: 1334px; margin: 0 auto;
+    .hero-title{
+      position: absolute; width:868px; top:140px;
+      filter:drop-shadow(2px 2px 0px rgba(0,0,0,0.4));
+    }
+    .hero-back{
+      position: absolute; width:668px; bottom: 60px;
+    }
+    .hero-main{
+      position: absolute; width:668px; bottom: 80px; right:0;
+      animation: updown1 2s; animation-iteration-count: infinite;
+    }
+    .hero-obj{
+      position: absolute; width: 278px; transform-origin: bottom center;
+      right: 170px; bottom: 440px;
+      animation: updown2 2s; animation-iteration-count: infinite;
+    }
+  }
+  .wave-back{
+    position: absolute; width: 3475px; bottom: 30px;
+  }
+  .wave-front{
+    position: absolute; width: 3475px; bottom: 0px; left: 0px;
+  }
+}
+@keyframes updown1 {
+  0%{ transform: translateY(0px)}
+  50%{ transform: translateY(20px)}
+  100%{ transform: translateY(0px)}
+}
+@keyframes updown2 {
+  0%{ transform: translateY(0px) rotate(0deg); }
+  50%{ transform: translateY(20px) rotate(20deg)}
+  100%{ transform: translateY(0px) rotate(0deg);}
+}
+.con-img {
+    position: relative; width:100%; max-width: 1334px; 
+    margin: 0 auto;
+  }
+.section-con{
+  position: relative; width: 100%; min-height:500px;
+  background-color: #C8F5FF;
+}
+.section-2-blue{
+  position: relative; width: 100%; min-height:500px;
+  background-color: #0071C9;
+  .wave-line{
+    display: block; position: absolute; width: 100%; height:122px;
+    left:0; top: -35px; background-repeat: repeat-x;
+    background-image: url(../img/wave_blue.svg);
+    animation: updown3 2s; animation-iteration-count: infinite;
+  }
+  >img{
+    width: 878px; position: relative; margin: 0 auto; padding-top: 140px;
+  }
+}
+@keyframes updown3 {
+  0%{ transform: translateY(0px)}
+  50%{ transform: translateY(15px)}
+  100%{ transform: translateY(0px)}
+}
+.section-con-2{
+  position: relative; width: 100%; min-height:500px;
+  background-color: #E3FFFF; padding: 100px 0;
+}
+.section-con-4{
+  position: relative; width: 100%; min-height:500px;
+  background-color: white; padding: 100px 0;
+}
+.section-con-5{
+  position: relative; width: 100%; height: 700px;
+  background-color: #0071C9;
+  >img{
+    width: 982px; position: relative; margin: 0 auto; padding-top: 100px;
+  }
+}
+
+.btn-card-link {
+  position: fixed; z-index: 100; width: 84px; height:84px; border-radius: 50%;
+  border: 1px solid #8f9295; background-color: white; text-align: center;
+  display: flex; justify-content: center; align-items: center; overflow: hidden;
+  top: 130px; background-size: contain; background-position: center;
+  background-image: url(../img/btn_card.png);
+  filter:drop-shadow(0px 0px 8px rgba(0,0,0,0.1));
+  right:calc(50% - 780px);
+}
+/*--------------------*/
+
+.card-news-wrap{
+  width: 700px; height:700px; position: relative; margin: 80px auto 0 auto;
+  overflow: hidden;
+  >.swiper-wrapper{
+    width: 700px; height:700px; 
+    >.swiper-slide{
+      width:100%; height: 100%;
+      >img{
+        max-width: 100%;
+      }
+    }
+  }
+}
+.card-news-control{
+  position: relative; width:700px; margin: 16px auto;  height: 60px;
+  display: flex; justify-content: center; gap: 16px;
+}
+.btn-row-swiper-prev, .btn-row-swiper-next{
+  width: 40px; height:40px; border-radius: 50%;
+  background-color: #8f9295; display: flex; align-items: center; justify-content: center;
+  bottom: 0; z-index: 5;
+  >svg{
+    width:24px; height:24px;
+  }
+}

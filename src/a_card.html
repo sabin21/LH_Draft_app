@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Draft</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" defer="">
+  <link rel="stylesheet" href="./js/swiper_10.2/swiper-bundle.css">
+</head>
+
+<body>
+  <div class="page-wrap">
+    <div class="card-news-wrap">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/card_01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_02.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_03.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_04.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_05.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_06.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_07.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/card_08.png" alt="">
+        </div>
+      </div>
+      
+    </div>
+    <div class="card-news-control">
+      <div class="btn-row-swiper-prev">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M20 6L10 16L20 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="btn-row-swiper-next">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M12 6L22 16L12 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/swiper_10.2/swiper-bundle.min.js"></script>
+  <script>
+    const heroSwiper = new Swiper('.card-news-wrap',{
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation:
+    {
+      nextEl: ".btn-row-swiper-next",
+      prevEl: ".btn-row-swiper-prev",
+    },
+  });
+  </script>
+
+</body>
+</html>
